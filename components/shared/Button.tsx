@@ -1,12 +1,12 @@
 import Link from 'next/link';
 
-type ButtonProps = {
+interface IButton {
     type: string,
     text: string,
     href: string, 
 }
 
-const Button = ({type, text, href}: ButtonProps) => {
+const Button: React.FC<IButton> = ({type, text, href}) => {
     return (
         <>
             {
