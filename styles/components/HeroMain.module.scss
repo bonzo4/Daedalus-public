@@ -1,6 +1,8 @@
-.container {
-    color: blue;   
+@import '../settings/mixins';
 
+.container {
+    @include flexbox(); 
+    width: 100%;
 
     &__left{
         color: yellow

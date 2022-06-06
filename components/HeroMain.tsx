@@ -1,25 +1,28 @@
 import styles from "../styles/components/HeroMain.module.scss";
-import Image from 'next/image';
+import cx from "classnames";
+import { Image } from "@nextui-org/react";
 
 interface HeroMain {
     title: string,
     description?: string,
-    images: Array<string>,
+    imageBlock: string,
     waitlist?: Boolean
 }
 
-const HeroMain: React.FC<HeroMain> = ({title, description, images, waitlist}) => {
+const HeroMain: React.FC<HeroMain> = ({title, description, imageBlock, waitlist}) => {
     return (
-        <div className={styles.container}>
+        <div className={cx(styles.container, 'wrapper')}>
             <div className={styles.container__left}>
                 <h2>{ title }</h2>
                 <p>{ description }</p>
             </div>
 
             <div className={styles.container__right}>
-                {images.map((url, index) => (
-                    <Image src={url} key={index} alt="short image" layout="fill"/>
-                ))}
+                <Image 
+                    showSkeleton
+                    src={imageBlock}  
+                    alt="Nft collage image"  
+                    objectFit="cover"/>
             </div>
         </div>
     )
