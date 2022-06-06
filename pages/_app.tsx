@@ -3,10 +3,11 @@ import type { AppProps } from 'next/app'
 import { NextUIProvider } from '@nextui-org/react'; 
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return 
+  return (
     <NextUIProvider> 
       <Component {...pageProps} />
-  </NextUIProvider>
+    </NextUIProvider>
+  )
 }
 
 export default MyApp

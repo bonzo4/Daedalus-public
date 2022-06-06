@@ -1,0 +1,33 @@
+$fontFamily: 'Poppins', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+$headlineFontFamily: 'Poppins', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+
+$fontSize: 16px;
+$fontWeight: 400;
+$fontColor: $mediumGrey;
+
+
+$headlineFontWeight: 700;
+$headlineFontSize: 36px;
+$headlineFontColor: $darkGrey;
+$headlineTextTransform: none;
+$headlineLetterSpacing: normal;
+$placeholderColor: $grey;
+
+$selectArrowPNG: "/images/select-arrow.png";
+$selectArrowSVG: "/images/select-arrow.svg";
+
+$maxWidth: 1200px;
+$sidebarWidth: 260px;
+$gutter: 20px;
+$space-1: $gutter * 1;
+$space-2: $gutter * 2;
+$space-3: $gutter * 3;
+$space-4: $gutter * 4;
+$space-5: $gutter * 5;
+
+$max-z-index: 2147483647;
+$index-priority-one: $max-z-index;
+$index-priority-two: $max-z-index - 1;

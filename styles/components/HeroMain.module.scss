@@ -1,0 +1,15 @@
+.container {
+    color: blue;   
+
+
+    &__left{
+        color: yellow
+    }
+
+    &__right {
+
+        &--boom{
+            color: red;
+        }
+    }
+}

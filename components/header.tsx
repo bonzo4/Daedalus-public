@@ -7,7 +7,7 @@ const Header = () => {
                 <Button 
                     type="link"
                     text="Collections"
-                    href="/collection"
+                    href="/collections"
                 />
 
                 <Button 
