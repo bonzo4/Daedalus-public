@@ -1,0 +1,45 @@
+@import '../settings/colors';
+@import '../settings/mixins';
+
+.imageBlock{
+    color: $white;
+    padding-top: 100px;
+    
+
+    &__top {
+        @include flexbox();
+        @include flex-direction(column);
+        @include align-items(center);
+        @include justify-content(center);
+        margin-bottom: 50px;
+
+        h2 {
+            font-size: 40px;
+            line-height: 47px;
+            font-weight: 700;
+        }
+
+        p {
+            color: $halfWhite;
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    &__bottom {
+        &_text {
+            h3{
+                font-size: 30px;
+                line-height: 45px;
+                color: $white;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 20px;
+                line-height: 36px;
+                color: $halfWhite;
+            }
+        }
+    }
+}

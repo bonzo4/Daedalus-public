@@ -1,0 +1,16 @@
+@import '../../settings/colors';
+
+.button{
+    background: $main-button-color;
+    color: $white;
+    border: 0px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    
+    &__link{
+        color: $white;
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 500;
+    }
+}

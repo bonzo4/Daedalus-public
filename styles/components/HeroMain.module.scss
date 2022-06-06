@@ -1,17 +1,31 @@
 @import '../settings/mixins';
+@import '../settings/colors';
 
 .container {
     @include flexbox(); 
     width: 100%;
+    padding-top: 70px;
+    padding-bottom: 20px;
 
-    &__left{
-        color: yellow
-    }
+    &__left {
+        color: $white;
 
-    &__right {
+        h2 {
+           font-size: 50px;
+           line-height: 60px;
+           font-weight: 700; 
+           letter-spacing: 1px;
+        }
 
-        &--boom{
-            color: red;
+        p {
+            color: $halfWhite;
+            font-size: 20px;
+            line-height: 36px;
+            font-weight: 500;
+        }
+
+        &_button {
+            margin-left: 10px;
         }
     }
 }

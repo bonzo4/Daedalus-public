@@ -1,0 +1,14 @@
+@import '../settings/mixins';
+
+.header {
+    padding: 25px 0;
+
+    &__nav {
+        @include flexbox();
+        @include align-items(center);
+
+        &_text {
+            margin-right: 25px;
+        }
+    }
+}

@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       subtitle: 'A Web3 brand with infinite curiosity.',
       image: 'https://images.prismic.io/anatta-design/291be2b1-081b-481c-ba8b-4bb408e14baf_julian-hochgesang-39BKKhuy11k-unsplash+1.png?auto=compress,format',
       blockTitle: 'Enter the Fields of Elysium',
-      blockDescription: "As a heroic soul fades, its flame is rekindled as an Elysian. As one with the afterlife, these storytellers explore the brightest corners of possibility–unafraid of what was once $MYTH. <br /> Stake your Elysian for $MYTH and participate in the Elysium ecosystem. Get access to the ElysianDAO, Discord, and community."
+      blockDescription: "As a heroic soul fades, its flame is rekindled as an Elysian. As one with the afterlife, these storytellers explore the brightest corners of possibility–unafraid of what was once $MYTH. <br /> <br /> Stake your Elysian for $MYTH and participate in the Elysium ecosystem. Get access to the ElysianDAO, Discord, and community."
     }
   }
    
@@ -30,7 +30,7 @@ const Home: NextPage = () => {
         <meta name="description" content="Whitelist!" />
       </Head>
 
-      <Layout>
+      <Layout> 
         <HeroMain 
           description={pageData.heroSection.content}
           imageBlock={pageData.heroSection.imageBlock}
