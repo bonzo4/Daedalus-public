@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Layout from '../layout';
 import HeroMain from '../components/HeroMain';
+import ImageBlock from '../components/ImageBlock';
 
 const Home: NextPage = () => {
   const pageData = { 
@@ -27,7 +28,6 @@ const Home: NextPage = () => {
       <Head>
         <title>Daedalus Labs</title>
         <meta name="description" content="Whitelist!" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Layout>
@@ -38,6 +38,13 @@ const Home: NextPage = () => {
           waitlist={pageData.heroSection.waitlist}
         />
 
+        <ImageBlock 
+          title={pageData.blockSection.title}
+          description={pageData.blockSection.subtitle}
+          image={pageData.blockSection.image}
+          blockTitle={pageData.blockSection.blockTitle}
+          blockDescription={pageData.blockSection.blockDescription}
+        />
       </Layout>
     </div>
   )
