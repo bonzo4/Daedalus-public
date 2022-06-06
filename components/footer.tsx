@@ -1,9 +1,10 @@
 import cx from 'classnames';
+import styles from '../styles/components/Footer.module.scss';
 
 const Footer = () => {
     const data = {
         subFooterBrand:{
-            title: 'PsychoArt',
+            title: 'Daedalus Labs',
             description: 'The best NFT marketplace website in the world and feel your experience in selling or buy our work',
         },
         subFooter: [
@@ -53,34 +54,37 @@ const Footer = () => {
         ]
     }
     return (
-        <footer className={cx('footer')}>
-            <div className={cx('footer__subfooter')}>
-                <div>
-                    <h2>{ data.subFooterBrand.title }</h2>
+        <footer className={cx(styles.footer, 'wrapper')}>
+            <div className={cx(styles.footer__subfooter, 'footer__subfooter')}>
+                <div className={cx(styles.footer__subfooter_left, 'foofer__subfooter_brand')}>
+                    <h2 dangerouslySetInnerHTML={{ __html: data.subFooterBrand.title }}></h2>
                     <p>{ data.subFooterBrand.description }</p>
                 </div>
-                { 
-                    data.subFooter && data.subFooter.map((each, index) => (
-                        <ul key={index}>
-                            <li>
-                                {each.list_title}
-                            </li>
 
-                            { each.list &&  each.list.map((contentBlock, contentIndex) => {
-                                return (
-                                    <li key={contentIndex}>
-                                        <a href="" dangerouslySetInnerHTML={{ __html: contentBlock.title}}>
-                                        </a>
-                                    </li>  
-                                    )
-                                })     
-                            } 
-                        </ul>
-                    ))
-                }
+                <div className={cx(styles.footer__subfooter_right)}>
+                    { 
+                        data.subFooter && data.subFooter.map((each, index) => (
+                            <ul key={index} className={cx(styles.footer__subfooter_right_block)}>
+                                <li>
+                                    {each.list_title}
+                                </li>
+
+                                { each.list &&  each.list.map((contentBlock, contentIndex) => {
+                                    return (
+                                        <li key={contentIndex}>
+                                            <a href="" dangerouslySetInnerHTML={{ __html: contentBlock.title}}>
+                                            </a>
+                                        </li>  
+                                        )
+                                    })     
+                                } 
+                            </ul>
+                        ))
+                    }
+                </div>
             </div>
 
-            <div className={cx('footer__copyright')}>
+            <div className={cx(styles.footer__copyright)}>
                 <h3>Copyright © {new Date().getFullYear()} Daedalus</h3>   
             </div>         
         </footer>

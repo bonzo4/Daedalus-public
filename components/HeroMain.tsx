@@ -27,6 +27,7 @@ const HeroMain: React.FC<HeroMain> = ({title, description, imageBlock, waitlist}
                             <Input
                                 size="lg"
                                 placeholder="Email"
+                                labelPlaceholder="Your email"
                             />
 
                             <Button
