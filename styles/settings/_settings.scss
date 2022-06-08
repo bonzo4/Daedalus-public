@@ -185,3 +185,13 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+
+.inline-block {
+    display: inline-block;
+}
+
+.span-svg{
+    svg {
+        display: block;
+    }
+}

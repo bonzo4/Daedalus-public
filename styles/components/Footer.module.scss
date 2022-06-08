@@ -11,11 +11,22 @@
   &__subfooter {
     padding: 20px 0;
     @include flexbox();
-    @include justify-content(space-between);
+    @include flex-direction(column);
+
+    @include breakpoint(tablet){
+      @include flex-direction(row);
+      @include justify-content(space-between);
+    }
 
     &_left,
     &_right{
-      width: 50%;
+      width: 100%;
+      margin-bottom: 20px;
+
+      @include breakpoint(tablet){
+        width: 50%;
+        margin-bottom: 0px;
+      }
     }
 
     &_left {
@@ -27,7 +38,10 @@
     &_right {
       @include flexbox();
       @include justify-content(space-between);
-
+      
+      ul{
+        margin: 0px;
+      }
 
       &_block {
         color: $white;

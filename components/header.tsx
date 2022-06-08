@@ -1,4 +1,5 @@
 import Button from './shared/Button';
+import ButtonLink from './shared/ButtonLink';
 import { Image, Grid, Input } from '@nextui-org/react';
 import cx from 'classnames';
 import styles from '../styles/components/Header.module.scss';
@@ -15,41 +16,36 @@ const Header = () => {
                         <Image src={pageData.logoUrl} alt="Daedalus logo" showSkeleton objectFit="cover" width={50} height={50}/>
                     </Grid>
 
-                    {/* <Grid>
-                        <Input size="lg" placeholder='Search collection' contentLeft={
-
-                        } />
-                    </Grid> */}
-
                     <Grid>
                         <nav className={cx(styles.header__nav)}>
-                            <Button 
+                            <ButtonLink 
                                 type="link"
-                                text="Collections"
                                 href="/collections"
                                 className={cx(styles.header__nav_text)}
-                            />
+                            >
+                                Collections
+                            </ButtonLink>
 
-                            <Button 
+                            <ButtonLink 
                                 type="link"
-                                text="Calendar"
                                 href="/calendar"
                                 className={cx(styles.header__nav_text)}
-                            />
+                            >
+                                Calendar
+                            </ButtonLink>
 
-                            <Button 
+                            <ButtonLink 
                                 type="link"
-                                text="FAQ"
                                 href="/faq"    
                                 className={cx(styles.header__nav_text)}
-                            />
+                            >
+                                FAQ
+                            </ButtonLink>
                             
                             <div>
-                                <Button
-                                    type="button"
-                                    text="Select Wallet"
-                                    href=""
-                                />
+                                <Button>
+                                    Select Wallet
+                                </Button>
                             </div>
                         </nav>
                     </Grid>

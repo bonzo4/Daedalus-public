@@ -1,14 +1,16 @@
-import PortalHeader from '../components/PortalHeader';
-import Footer from '../components/Footer';
-import styles from '../styles/layout/layout.module.scss';
+import PortalHeader from '@/components/PortalHeader';
+import styles from '@/styles/layout/portalLayout.module.scss';
 
-const PortalLayout = ({children}: any) => (
+interface ILayout {
+    children: React.ReactNode
+}
+
+const PortalLayout:React.FC<ILayout> = ({children}) => (
     <div className={styles.container}>
         <PortalHeader />
         <main>
             {children}
         </main>
-        <Footer />
     </div>
 )
 

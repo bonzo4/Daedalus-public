@@ -14,12 +14,10 @@ const HeroMain: React.FC<HeroMain> = ({title, description, imageBlock, waitlist}
     return (
         <div className={cx('wrapper', styles.container)}>
             <Grid.Container  
-                wrap="nowrap"
-                justify="space-between" 
-                gap={2} 
+                justify="center" 
                 alignItems="center">
-                <Grid xs={5}>
-                    <div className={styles.container__left}>
+                <Grid xs={12} md={5} justify="center">
+                    <div className={cx(styles.container__left, 'mb1')}>
                         <h2>{ title }</h2>
                         <p>{ description }</p>
 
@@ -30,16 +28,14 @@ const HeroMain: React.FC<HeroMain> = ({title, description, imageBlock, waitlist}
                                 labelPlaceholder="Your email"
                             />
 
-                            <Button
-                                type="button" 
-                                text="I'm interested!"
-                                className={cx(styles.container__left_button)}
-                            />
+                            <Button className={cx(styles.container__left_button)}>
+                                {"I'm interested!"}
+                            </Button>
                         </form>
                     </div>
                 </Grid>
 
-                <Grid xs={7} justify="flex-end">
+                <Grid xs={12} md={7} justify="center">
                     <div className={styles.container__right}>
                         <Image 
                             showSkeleton

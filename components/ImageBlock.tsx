@@ -21,20 +21,19 @@ const ImageBlock: React.FC<IImageBlock> = ({title, description, image, blockTitl
                 </div>
             }
 
-            <Grid.Container gap={1} justify="center" wrap="nowrap">
-                <Grid xs={6}>
+            <Grid.Container gap={1} justify="center">
+                <Grid xs={12} md={6}>
                     <Image src={image} alt="Elysian Image" showSkeleton/>
                 </Grid>
 
-                <Grid xs={6} alignItems="center">
+                <Grid sm={8} xs={12} md={6} alignItems="center">
                     <div className={cx(styles.imageBlock__bottom_text)}>
                         <h3>{blockTitle}</h3>
                         <p dangerouslySetInnerHTML={{ __html: blockDescription}}></p>
 
-                        <Button 
-                            type="button"
-                            text="Buy on Magic Den"
-                        />
+                        <Button>
+                            Buy on Magic Den
+                        </Button>
                     </div>
                 </Grid>
             </Grid.Container>
