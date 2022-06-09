@@ -10,11 +10,13 @@ const PortalHeader = () => {
         nav: [
             {
                 "title": "Dashboard",
-                "link": "/portal/dashboard"
+                "link": "/portal/dashboard",
+                "svg": "medal"
             },
             {
                 "title": "Applications",
-                "link": "/portal/application"
+                "link": "/portal/application",
+                "svg": "book"
             }
         ]
     }
@@ -38,7 +40,7 @@ const PortalHeader = () => {
                             return (
                                 <li key={index}>
                                     <ButtonLink href={each.link} className={cx(styles.portalHeader__link)}>
-                                        <span className={cx('mr-10', 'inline-block', 'span-svg')} dangerouslySetInnerHTML={{ __html: svgHtml('star')}}>
+                                        <span className={cx('mr-10', 'inline-block', 'span-svg')} dangerouslySetInnerHTML={{ __html: svgHtml(each.svg)}}>
                                         </span>
                                         {each.title}
                                     </ButtonLink>

@@ -38,9 +38,11 @@
     &_right {
       @include flexbox();
       @include justify-content(space-between);
+      @include flex-wrap(wrap);
       
       ul{
         margin: 0px;
+        margin-bottom: 20px;
       }
 
       &_block {

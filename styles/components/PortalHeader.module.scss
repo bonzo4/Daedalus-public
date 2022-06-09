@@ -10,6 +10,7 @@
     padding: 20px;
     background-color: $secondary-portal-color;
     border-right: 1px solid $main-portal-color;
+
     &_inner{
         width: 100%;
     }
@@ -17,8 +18,7 @@
 
 .portalHeader {
     &__image{
-
-        margin: 0px;
+        margin-bottom: 40px;
     }
 
     &__list {
@@ -30,5 +30,8 @@
     &__link {
         @include flexbox();
         @include align-items(center);
+        margin-bottom: 10px;
+        padding: 5px;
+        border-radius: 5px;
     }
 }

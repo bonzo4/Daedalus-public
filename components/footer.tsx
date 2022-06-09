@@ -21,7 +21,7 @@ const Footer = () => {
                 list_title: 'Company',
                 list: [
                     {
-                        'title': 'about',
+                        'title': 'About',
                         'link': '/about',
                     }
                 ]
