@@ -184,6 +184,10 @@ body {
     max-width: 1320px;
     margin: 0 auto;
     padding: 0 20px;
+
+    &.no-padding {
+        padding: 0px;
+    }
 }
 
 .inline-block {
@@ -194,4 +198,12 @@ body {
     svg {
         display: block;
     }
+}
+
+.ul-nornalized {
+    margin: 0px;
+}
+
+p{
+    margin-bottom: 15px;
 }

@@ -44,7 +44,7 @@ const Header = () => {
                             
                             <div>
                                 <Button>
-                                    Select Wallet
+                                    Join US
                                 </Button>
                             </div>
                         </nav>

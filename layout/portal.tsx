@@ -8,7 +8,8 @@ interface ILayout {
 const PortalLayout:React.FC<ILayout> = ({children}) => (
     <div className={styles.container}>
         <PortalHeader />
-        <main>
+        
+        <main className={styles.portalLayout__right}>
             {children}
         </main>
     </div>

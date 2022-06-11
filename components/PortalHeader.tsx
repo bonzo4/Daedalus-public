@@ -6,7 +6,7 @@ import { svgHtml } from "@/utils/index";
 
 const PortalHeader = () => {
     const pageData = {
-        logoUrl: 'https://images.prismic.io/anatta-design/f5ef2d09-77e6-45e2-a6f4-3edf73b25250_daedalus-labs-symbol-full-color-version-rgb-12in%40300ppi+1.png?auto=compress,format',
+        logoUrl: 'https://images.prismic.io/daedaluslabs/503acd4a-3154-4c3f-84e3-565952b5f66a_DaedaluSide.png?auto=compress,format',
         nav: [
             {
                 "title": "Dashboard",
@@ -18,20 +18,32 @@ const PortalHeader = () => {
                 "link": "/portal/application",
                 "svg": "book"
             }
+        ],
+        navFooter: [
+            {
+                'title': 'Discord',
+                "link": '/discord',
+                'svg': 'discord'
+            },
+            {
+                'title': 'Twitter',
+                'link': '/twitter',
+                'svg': 'twitter'
+            }
         ]
     }
     return (
         <div className={cx(styles.container)}>
-            <div className={cx(styles.container_inner)}>
-                <div>                   
+            <div className={cx(styles.container_inner, styles.portalHeader__inner)}>
+                <div className={cx()}>                   
                     <div className={cx(styles.portalHeader__image)}>   
                         <Image 
                             src={pageData.logoUrl} 
                             alt="Daedalus Logo" 
                             showSkeleton 
-                            objectFit="cover" 
-                            width={50} 
-                            height={50} 
+                            objectFit="contain" 
+                            width={360} 
+                            height={120} 
                         />
                     </div>
            
@@ -40,7 +52,7 @@ const PortalHeader = () => {
                             return (
                                 <li key={index}>
                                     <ButtonLink href={each.link} className={cx(styles.portalHeader__link)}>
-                                        <span className={cx('mr-10', 'inline-block', 'span-svg')} dangerouslySetInnerHTML={{ __html: svgHtml(each.svg)}}>
+                                        <span className={cx('mr-5', 'inline-block', 'span-svg')} dangerouslySetInnerHTML={{ __html: svgHtml(each.svg)}}>
                                         </span>
                                         {each.title}
                                     </ButtonLink>
@@ -50,8 +62,20 @@ const PortalHeader = () => {
                     </ul>
                 </div>
 
-                <div>
-                    
+                <div className={cx(styles.portalHeader__bottom)}>
+                    <ul className={cx(styles.portalHeader__bottom_inner, 'ul-nornalized')}>
+                        {pageData.navFooter.map((each, index) => {
+                            return (
+                                <li key={index} className={cx('column')}>
+                                    <ButtonLink href={each.link} className={cx(styles.portalHeader__link, styles.portalHeader__link_social)}>
+                                        <span className={cx('mr-5', 'inline-block', 'span-svg')} dangerouslySetInnerHTML={{ __html: svgHtml(each.svg)}}>
+                                        </span>
+                                        {each.title}
+                                    </ButtonLink>
+                                </li>
+                            )
+                        })}
+                    </ul>
                 </div>
             </div>
         </div>

@@ -6,7 +6,7 @@
     height: 100vh;
     position: fixed;
     left: 0;
-    width: 260px;
+    width: 240px;
     padding: 20px;
     background-color: $secondary-portal-color;
     border-right: 1px solid $main-portal-color;
@@ -17,10 +17,6 @@
 }
 
 .portalHeader {
-    &__image{
-        margin-bottom: 40px;
-    }
-
     &__list {
         @include flexbox();
         @include flex-direction(column);
@@ -33,5 +29,34 @@
         margin-bottom: 10px;
         padding: 5px;
         border-radius: 5px;
+
+        &_social {
+            border: 1px solid $white;
+            font-size: 14px;
+            padding: 3px 10px;
+        }
+    }
+
+    &__inner{
+        @include flexbox();
+        @include justify-content(space-between);
+        @include flex-direction(column);   
+    }
+
+    &__bottom{
+        &_inner{
+            border-top: 1px solid $white;
+            padding: 20px 0 0;
+            @include flexbox(); 
+            @include justify-content(space-between);
+        }   
+
+        &_login{
+            color: $white;
+
+            p {
+                font-size: 14px;
+            }
+        }
     }
 }
