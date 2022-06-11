@@ -25,6 +25,6 @@
       "@/error/*": ["error/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "utils/index.js", "pages/_error/index.js", "context/GlobalProvider.js", "context/ModalProvider.js", "context/WindowSize.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "utils/index.js", "pages/_error/index.tsx", "context/GlobalProvider.js", "context/ModalProvider.js", "context/WindowSize.js"],
   "exclude": ["node_modules"]
 }

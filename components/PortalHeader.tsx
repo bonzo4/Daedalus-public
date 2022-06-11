@@ -15,7 +15,7 @@ const PortalHeader = () => {
             },
             {
                 "title": "Applications",
-                "link": "/portal/application",
+                "link": "/portal/applications",
                 "svg": "book"
             },
             {

@@ -3,7 +3,7 @@ import cx from "classnames";
 import { Text, Grid } from '@nextui-org/react'; 
 import ButtonLink from "@/components/shared/ButtonLink";
 
-function Error({ statusCode }) {
+function Error({ statusCode }:any) {
   return (
     <Layout>
         <section className={cx('wrapper', 'my3')}>
@@ -27,7 +27,7 @@ function Error({ statusCode }) {
   )
 }
 
-Error.getInitialProps = async ({ req, err, res }) => {
+Error.getInitialProps = async ({ req, err, res }:any) => {
   const statusCode = res ? res.statusCode : err ? err.statusCode : 404;
   
   return { 

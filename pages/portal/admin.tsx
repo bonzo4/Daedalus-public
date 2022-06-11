@@ -1,8 +1,11 @@
+import PortalLayout from "@/layout/portal";
+import cx from 'classnames';
+
 const Admin = () => {
     return (
-        <div>
+        <PortalLayout>
             <h2>Hello World </h2>
-        </div>
+        </PortalLayout>
     )
 }
 

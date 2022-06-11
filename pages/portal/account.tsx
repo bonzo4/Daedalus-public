@@ -1,8 +1,11 @@
+import PortalLayout from "@/layout/portal";
+import cx from 'classnames';
+
 const Account = () => {
     return (
-        <div>
+        <PortalLayout>
             This is Account
-        </div>
+        </PortalLayout>
     )
 }
 
