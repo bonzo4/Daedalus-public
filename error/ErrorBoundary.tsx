@@ -22,13 +22,17 @@ class ErrorBoundary extends React.Component<any, any> {
                 <div>
                     <h2>Oops, there is an error!</h2>
                     <Button
-                    click={() => this.setState({ hasError: false })}>
-                    Try again?
+                        click={() => this.setState({ hasError: false })}>
+                        Try again?
                     </Button>
               </div>
             )
         } else {
-            return this.props.children
+            return ( 
+                <>
+                    { this.props.children }
+                </>
+            )
         }
     }
 
