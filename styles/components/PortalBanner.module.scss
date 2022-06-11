@@ -1,0 +1,21 @@
+@import '../settings/mixins';
+@import '../settings/colors';
+
+
+.portalBanner{
+    &__container{
+        max-height: 90px;
+        padding: 20px;
+        background: $main-portal-color;
+        @include position-sticky;
+        top: 0;
+        width: 100%;
+        z-index: $max-z-index;
+        border-bottom: 1px solid $halfWhite;
+    }
+
+    &__left {
+        font-size: 24px;
+        font-weight: bold; 
+    }
+}
