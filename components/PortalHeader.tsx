@@ -83,7 +83,7 @@ const PortalHeader = () => {
                             return (
                                 <li key={index} className={cx('column')}>
                                     <ButtonLink href={each.link} className={cx(styles.portalHeader__link, styles.portalHeader__link_social)}>
-                                        <span className={cx('mr-10', 'inline-block', 'span-svg')} dangerouslySetInnerHTML={{ __html: svgHtml(each.svg)}}>
+                                        <span className={cx('mr-5', 'inline-block', 'span-svg')} dangerouslySetInnerHTML={{ __html: svgHtml(each.svg)}}>
                                         </span>
                                         {each.title}
                                     </ButtonLink>

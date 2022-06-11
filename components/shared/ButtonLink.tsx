@@ -7,15 +7,16 @@ interface ILink {
     children: React.ReactNode,
     href: string, 
     className?: string,
-    buttonClass?: boolean
+    buttonClass?: boolean,
+    css?: Object 
 }
 
-const ButtonLink: React.FC<ILink> = ({type = 'link', children, href = '/', className, buttonClass}) => {
+const ButtonLink: React.FC<ILink> = ({type = 'link', children, href = '/', className, buttonClass, css}) => {
     return (
         <>
            {
                 type == 'external-link' &&
-                <a className={cx(buttonClass ? styles.button : '', styles.button__link, className)} href={href} rel="noreferrer" target="_blank">
+                <a style={css} className={cx(buttonClass ? styles.button : '', styles.button__link, className)} href={href} rel="noreferrer" target="_blank">
                     { children }
                 </a>
             }
@@ -23,7 +24,7 @@ const ButtonLink: React.FC<ILink> = ({type = 'link', children, href = '/', class
             { 
                 type == 'link' &&
                 <Link href={href}> 
-                    <a className={cx(buttonClass ? styles.button : '', styles.button__link, className)}>
+                    <a style={css} className={cx(buttonClass ? styles.button : '', styles.button__link, className)}>
                         { children }
                     </a>
                 </Link> 

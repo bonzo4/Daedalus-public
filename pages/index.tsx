@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Layout from '../layout';
-import HeroMain from '../components/HeroMain';
-import ImageBlock from '../components/ImageBlock';
+import Layout from '@/layout/index';
+import HeroMain from '@/components/HeroMain';
+import ImageBlock from '@/components/ImageBlock';
 
 const Home: NextPage = () => {
   const pageData = { 
@@ -24,7 +24,7 @@ const Home: NextPage = () => {
    
 
   return (
-    <div>
+    <>
       <Head>
         <title>Daedalus Labs</title>
         <meta name="description" content="Whitelist!" />
@@ -46,7 +46,7 @@ const Home: NextPage = () => {
           blockDescription={pageData.blockSection.blockDescription}
         />
       </Layout>
-    </div>
+    </>
   )
 }
 

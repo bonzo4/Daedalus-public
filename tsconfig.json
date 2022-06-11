@@ -19,9 +19,12 @@
       "@/components/*": ["components/*"],
       "@/layout/*": ["layout/*"],
       "@/styles/*": ["styles/*"],
-      "@/utils/*": ["utils/*"]
+      "@/utils/*": ["utils/*"],
+      "@/libaries/*": ["libarires/*"],
+      "@/context/*": ["context/*"],
+      "@/error/*": ["error/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "utils/index.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "utils/index.js", "pages/_error/index.js"],
   "exclude": ["node_modules"]
 }
