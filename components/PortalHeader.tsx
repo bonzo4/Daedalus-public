@@ -17,6 +17,21 @@ const PortalHeader = () => {
                 "title": "Applications",
                 "link": "/portal/application",
                 "svg": "book"
+            },
+            {
+                "title": "Calendar",
+                "link": "/portal/calendar",
+                "svg": "calendar"
+            },
+            {
+                "title": "Account",
+                "link": "/portal/account",
+                "svg": "account"
+            },
+            {
+                "title": "Admin",
+                "link": "/portal/admin",
+                "svg": "admin"
             }
         ],
         navFooter: [
@@ -51,8 +66,8 @@ const PortalHeader = () => {
                         {pageData.nav.map((each, index) => {
                             return (
                                 <li key={index}>
-                                    <ButtonLink href={each.link} className={cx(styles.portalHeader__link)}>
-                                        <span className={cx('mr-5', 'inline-block', 'span-svg')} dangerouslySetInnerHTML={{ __html: svgHtml(each.svg)}}>
+                                    <ButtonLink href={each.link} className={cx(styles.portalHeader__link, styles.portalHeader__link_top)}>
+                                        <span className={cx('mr-10', 'inline-block', 'span-svg')} dangerouslySetInnerHTML={{ __html: svgHtml(each.svg)}}>
                                         </span>
                                         {each.title}
                                     </ButtonLink>
@@ -68,7 +83,7 @@ const PortalHeader = () => {
                             return (
                                 <li key={index} className={cx('column')}>
                                     <ButtonLink href={each.link} className={cx(styles.portalHeader__link, styles.portalHeader__link_social)}>
-                                        <span className={cx('mr-5', 'inline-block', 'span-svg')} dangerouslySetInnerHTML={{ __html: svgHtml(each.svg)}}>
+                                        <span className={cx('mr-10', 'inline-block', 'span-svg')} dangerouslySetInnerHTML={{ __html: svgHtml(each.svg)}}>
                                         </span>
                                         {each.title}
                                     </ButtonLink>
