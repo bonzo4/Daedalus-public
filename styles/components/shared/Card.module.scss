@@ -77,18 +77,11 @@
     }
 
     &__author {
-        &_image {
+        &_container {
             width: 80px;
             height: 80px;
-
-            img {
-
-                // .nextui-image {
-                    border-radius: 50% !important;
-                // }
-                // border-radius: 50%;
-                
-            }
+            border-radius: 50%;
+            overflow: hidden;
         }
     }
 
@@ -99,6 +92,7 @@
         background: $secondary-button-color;
     }
 }
+
 
 
 .cardRegular {

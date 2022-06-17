@@ -31,7 +31,7 @@ const ImageBlock: React.FC<IImageBlock> = ({title, description, image, blockTitl
                         <h3>{blockTitle}</h3>
                         <p dangerouslySetInnerHTML={{ __html: blockDescription}}></p>
 
-                        <Button>
+                        <Button click={() =>{}}>
                             Buy on Magic Den
                         </Button>
                     </div>

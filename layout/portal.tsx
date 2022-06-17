@@ -2,9 +2,9 @@ import PortalHeader from '@/components/PortalHeader';
 import PortalBanner from '@/components/PortalBanner';
 import PaddingOffSet from '@/components/shared/PaddingOffSet';
 import styles from '@/styles/layout/portalLayout.module.scss';
-
+import { withGlobalProvider } from "@/context/GlobalProvider";
 interface ILayout {
-    children: React.ReactNode
+    children: React.ReactNode,
 }
 
 const PortalLayout:React.FC<ILayout> = ({children}) => (
@@ -12,7 +12,7 @@ const PortalLayout:React.FC<ILayout> = ({children}) => (
         <PortalHeader />
         
         <main className={styles.portalLayout__right}>
-            <PortalBanner routeName="Dashboard" />
+            <PortalBanner />
             <PaddingOffSet height={30} />
 
             {children}
@@ -20,4 +20,4 @@ const PortalLayout:React.FC<ILayout> = ({children}) => (
     </div>
 )
 
-export default PortalLayout;
+export default withGlobalProvider(PortalLayout);

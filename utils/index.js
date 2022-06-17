@@ -17,3 +17,15 @@ export const svgHtml = (value) => {
 
     return '';
 }
+
+
+export const getHashValue = () => {
+    if (typeof window !== 'undefined') {
+        if (window.location.hash) {
+            var hash = window.location.hash.substring(1);
+            return hash;
+        }
+    }
+
+    return ''
+}
