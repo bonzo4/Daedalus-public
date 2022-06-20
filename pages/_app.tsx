@@ -1,9 +1,10 @@
-import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
 import ErrorBoundary from '@/error/ErrorBoundary';
 import GlobalProvider from '@/context/GlobalProvider';
 import WindowSize from '@/context/WindowSize';
 import { NextUIProvider } from '@nextui-org/react'; 
+import '@/styles/globals.scss';
+import '@/styles/tailwind.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

@@ -3,7 +3,9 @@ const nextConfig = {
   images: {
     domains: ['images.prismic.io'] 
   },
-
+  compiler: {
+    styledComponents: true,
+  },
   reactStrictMode: true,
 }
 

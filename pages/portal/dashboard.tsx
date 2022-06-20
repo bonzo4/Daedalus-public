@@ -11,12 +11,12 @@ import { withGlobalProvider } from "@/context/GlobalProvider";
 interface IDashboard{
     setPortalTextRoute: Function
 }
-
+ 
 const Dashboard:React.FC<IDashboard> = ({setPortalTextRoute}) => {
     const [currentRoute, setCurrentRoute] = useState('');
 
     useEffect(() => {
-        setPortalTextRoute('DashBoard');
+        setPortalTextRoute('DashBoard'); 
     }, [])
 
     const pageData = {
