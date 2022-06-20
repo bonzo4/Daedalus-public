@@ -4,8 +4,8 @@ import { withGlobalProvider } from "@/context/GlobalProvider";
 import ButtonLink from "@/components/shared/ButtonLink";
 import SubNavigation from "@/components/SubNavigation";
 import cx from 'classnames';
-import { Card, Grid, Image } from '@nextui-org/react';
 import cardStyles from '@/styles/components/shared/Card.module.scss';
+import CardRegular from '@/components/CardRegular';
 
 
 interface IApplications {
@@ -75,35 +75,9 @@ const Applications:React.FC<IApplications> = ({setPortalTextRoute}) => {
             </section>
 
             {!currentRoute &&
-            <section className={cx('wrapper')}>
-                <Grid.Container gap={2}>
-                    {              
-                        pageData && pageData.cardRegular.map((each, index) => {
-                            return (
-                                <Grid key={index} xs={6} sm={4} md={3} >
-                                    <Card className={cx(cardStyles.cardRegular__card)}>
-                                        <Card.Header css={{ p: 0, }}>
-                                            <Image 
-                                                src={each.image} 
-                                                alt='Partner Image' 
-                                                objectFit="cover"
-                                                className={cx(cardStyles.cardRegular__card_image)}
-                                                />
-                                        </Card.Header>
-
-                                        <Card.Body>
-                                            <div className={cx(cardStyles.cardRegular__headline, cardStyles.cardRegular__headline_left)}>
-                                                <h2 className={cx(cardStyles.cardPrice__title)}>{each.title}</h2>
-                                                <p>{each.subtitle}</p>
-                                            </div>
-                                        </Card.Body>
-                                    </Card>
-                                </Grid>
-                            )
-                        })  
-                    }
-                </Grid.Container> 
-            </section>
+                <section className={cx('wrapper')}>
+                    <CardRegular list={pageData.cardRegular} cardBodyStyle={cx(cardStyles.cardRegular__headline_left)}/>
+                </section>
             }
         </PortalLayout>
     )

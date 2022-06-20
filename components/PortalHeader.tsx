@@ -81,7 +81,7 @@ const PortalHeader = () => {
                     <ul className={cx(styles.portalHeader__bottom_inner, 'ul-nornalized')}>
                         {pageData.navFooter.map((each, index) => {
                             return (
-                                <li key={index} className={cx('column')}>
+                                <li key={index}>
                                     <ButtonLink href={each.link} className={cx(styles.portalHeader__link, styles.portalHeader__link_social)}>
                                         <span className={cx('mr-5', 'inline-block', 'span-svg')} dangerouslySetInnerHTML={{ __html: svgHtml(each.svg)}}>
                                         </span>

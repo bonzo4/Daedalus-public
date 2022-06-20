@@ -13,7 +13,7 @@ interface IConnector {
 
 const AccountConnector:React.FC<IConnector> = ({type}) => {
     return (
-        <div className={cx('flex', 'flex-col', 'bg-gray-300', 'boxshadow', 'rounded-md')}>
+        <div className={cx('flex', 'flex-col', 'bg-dark-blue', 'boxshadow', 'rounded-md')}>
            <div className={cx("p-4", "border-b", "border-half-white", "border-solid")}>
                 <h2 className={cx("capitalize", "font-bold")}>{type}</h2>
            </div>

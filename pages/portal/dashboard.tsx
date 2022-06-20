@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react';
 import PortalLayout from "@/layout/portal";
 import cx from 'classnames';
-import { Card, Text, Grid, Image } from '@nextui-org/react';
-import cardStyles from '@/styles/components/shared/Card.module.scss';
-import styles from '@/styles/components/Dashboard.module.scss';
-import ButtonLink from "@/components/shared/ButtonLink";
 import SubNavigation from "@/components/SubNavigation";
 import { withGlobalProvider } from "@/context/GlobalProvider";
+import CardRegular from '@/components/CardRegular';
+import CardAuthor from '@/components/CardAuthor';
+import CardPrice from '@/components/CardPrice';
 
 interface IDashboard{
     setPortalTextRoute: Function
@@ -249,118 +248,23 @@ const Dashboard:React.FC<IDashboard> = ({setPortalTextRoute}) => {
                 <SubNavigation list={pageData.subNavigation} passRoute={setCurrentRoute}>
                 </SubNavigation>
             </section>
+
             {!currentRoute &&  
             <section className={cx('wrapper')}>
-                <Grid.Container gap={1}>
-                    {pageData && pageData.cardPrice.map((each, index) => {
-                            return (
-                                <Grid key={index} xs={6} sm={4} md={3} >
-                                    <Card className={cx(styles.dashboard__card, cardStyles.cardPrice__card)}>
-                                        <Card.Header css={{ p: 0 }}>
-                                            <Image src={each.image} alt='Partner Image'/>
-                                        </Card.Header>
-
-                                        <Card.Body>
-                                            { each.subtitle &&
-                                                <p className={cx(cardStyles.cardPrice__subtitle)}>
-                                                    { each.subtitle }
-                                                </p>
-                                            }
-                                            <div className={cx(cardStyles.cardPrice__headline)}>
-                                                <h2 className={cx(cardStyles.cardPrice__title)}>{each.title}</h2>
-                                                <p>{each.price} SOL</p>
-                                            </div>
-                                        </Card.Body>
-
-                                        <Card.Footer>
-                                            <ButtonLink href={each.link} buttonClass={true} className={cx(cardStyles.cardPrice__button)}>
-                                                Partnership Request
-                                            </ButtonLink>
-                                        </Card.Footer>
-                                    </Card>
-                                </Grid>
-                            )
-                        })  
-                    }
-                </Grid.Container> 
+                <CardPrice list={pageData.cardPrice} buttonText="Partnership Request"/>
             </section>
             }
 
             {currentRoute == 'active-projects' &&
             <section className={cx('wrapper')}>
-                <Grid.Container gap={1}>
-                    {              
-                        pageData && pageData.cardCreator.map((each, index) => {
-                            return (
-                                <Grid key={index} xs={6} sm={4} md={3} >
-                                    <Card className={cx(styles.dashboard__card, cardStyles.cardAuthor__card)}>
-                                        <Card.Header css={{ p: 0 }}>
-                                            <Image src={each.image} alt='Partner Background Image' className={cx(cardStyles.cardAuthor__image)}/>                       
-                                        </Card.Header>
-
-                                        <Card.Body css={{ overflowY: 'visible' }}>
-                                            <div className={cx(cardStyles.cardAuthor__headline)}>
-                                                <div className={cx(cardStyles.cardAuthor__author_container)}>
-                                                    <Image 
-                                                        src={each.authorImage} 
-                                                        alt='Author Image' 
-                                                        width={80} 
-                                                        height={80} 
-                                                        className={cx(cardStyles.cardAuthor__author_image)}
-                                                        objectFit="contain"
-                                                    />
-                                                </div>
-
-                                                <h2 className={cx(cardStyles.cardAuthor__title)}>{each.title}</h2>
-
-                                                <p>{each.subtitle}</p>
-                                            </div>
-                                        </Card.Body>
-
-                                        <Card.Footer>
-                                            <ButtonLink href={each.link} buttonClass={true} className={cx(cardStyles.cardAuthor__button)}>
-                                                Follow
-                                            </ButtonLink>
-                                        </Card.Footer>
-                                    </Card>
-                                </Grid>
-                            )
-                        })  
-                    }
-                </Grid.Container> 
+                <CardAuthor list={pageData.cardCreator}/>
             </section>
             }   
 
             {currentRoute == 'past-projects' &&
-            <section className={cx('wrapper')}>
-                <Grid.Container gap={2}>
-                    {              
-                        pageData && pageData.cardRegular.map((each, index) => {
-                            return (
-                                <Grid key={index} xs={6} sm={4} md={3} >
-                                    <Card className={cx(styles.dashboard__card, cardStyles.cardRegular__card)}>
-                                        <Card.Header css={{ p: 0, }}>
-                                            <Image 
-                                                src={each.image} 
-                                                alt='Partner Image' 
-                                                objectFit="cover"
-                                                className={cx(cardStyles.cardRegular__card_image)}
-                                                />
-                                        </Card.Header>
-
-                                        <Card.Body>
-                                            <div className={cx(cardStyles.cardRegular__headline)}>
-                                                <h2 className={cx(cardStyles.cardPrice__title)}>{each.title}</h2>
-                                                <p>{each.subtitle}</p>
-                                            </div>
-                                        </Card.Body>
-                                    </Card>
-                                </Grid>
-                            )
-                        })  
-                    }
-                </Grid.Container> 
-            </section>
+                <section className={cx('wrapper')}>
+                    <CardRegular list={pageData.cardRegular}/>
+                </section>
             }
         </PortalLayout>
     )
