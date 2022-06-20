@@ -1,4 +1,3 @@
-import Button from './shared/Button';
 import ButtonLink from './shared/ButtonLink';
 import { Image, Grid, Input } from '@nextui-org/react';
 import cx from 'classnames';
@@ -18,7 +17,7 @@ const Header = () => {
 
                     <Grid>
                         <nav className={cx(styles.header__nav)}>
-                            <ButtonLink 
+                            {/* <ButtonLink 
                                 type="link"
                                 href="/collections"
                                 className={cx(styles.header__nav_text)}
@@ -40,13 +39,16 @@ const Header = () => {
                                 className={cx(styles.header__nav_text)}
                             >
                                 FAQ
-                            </ButtonLink>
+                            </ButtonLink> */}
                             
-                            <div>
-                                <Button>
-                                    Join US
-                                </Button>
-                            </div>
+                          
+                            <ButtonLink
+                                buttonClass={true}
+                                    href="/login"    
+                                >
+                                Join US
+                            </ButtonLink>
+                           
                         </nav>
                     </Grid>
                 </Grid.Container>

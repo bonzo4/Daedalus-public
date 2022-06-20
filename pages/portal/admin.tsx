@@ -1,10 +1,13 @@
 import PortalLayout from "@/layout/portal";
+import ProjectList from '@/components/ProjectList'
 import cx from 'classnames';
 
 const Admin = () => {
     return (
         <PortalLayout>
-            <h2>Hello World </h2>
+            <section className={cx()}>
+                <ProjectList />
+            </section>
         </PortalLayout>
     )
 }

@@ -22,7 +22,6 @@ const SubNavigation:React.FC<IBreadcrumb> = ({list, children, passRoute}) => {
         handleUpdateListItem(list);
 
         return function cleanup() {
-            console.log("Clean up");
         }
     }, [])
 

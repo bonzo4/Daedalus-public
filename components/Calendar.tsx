@@ -98,7 +98,7 @@ const Calendar = () => {
         <div className="antialiased sans-serif h-screen">
             <div>
                 <div className="container mx-auto px-4 py-2">
-                    <div className="bg-white rounded-lg shadow overflow-hidden">
+                    <div className="bg-dark-blue rounded-lg shadow overflow-hidden">
                         <div className="border-b border-solid border-slate-200 flex items-center justify-between py-2 px-6 mb-1">
                             <div>
                                 <span className="text-lg font-bold text-gray-800">{monthNames[month]}</span>
@@ -128,7 +128,7 @@ const Calendar = () => {
                             </div>
                         </div>	
                         
-                        <div className="mx-1 -mb-1">
+                        <div className="-mb-1">
                             <div className="flex flex-wrap" style={{ marginBottom: "-40px" }}>
                                 {DAYS && 
                                     DAYS.map((day, index) => (
