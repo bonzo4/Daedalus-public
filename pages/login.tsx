@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Layout from '@/layout/index';
 import cx from 'classnames';
+import LoginForm from '@/components/LoginForm';
 
 const Login = () => {
     return (
@@ -11,7 +12,9 @@ const Login = () => {
         </Head>
 
         <Layout>
-            <h2>Log in with discord</h2>
+            <section className={cx('wrapper')}>
+                <LoginForm />
+            </section>
         </Layout>
         </>
     )
