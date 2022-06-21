@@ -5,16 +5,17 @@ interface IButton {
     children: React.ReactNode,
     className?: string,
     type?: 'button',
+    buttonClass?: boolean, 
     click: Function
 }
 
-const Button: React.FC<IButton> = ({children, className, type, click}) => {
+const Button: React.FC<IButton> = ({children, className, type, click, buttonClass = true}) => {
     return (
         <>
             {
                 <button 
                     type={type} 
-                    className={cx(styles.button, className)} 
+                    className={cx(buttonClass ? styles.button : '', className)} 
                     onClick={() => click}
                     >
                     { children }
