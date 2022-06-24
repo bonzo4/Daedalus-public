@@ -10,12 +10,18 @@
         @include position-sticky;
         top: 0;
         width: 100%;
-        z-index: $max-z-index;
+        z-index: $index-priority-two;
         border-bottom: 1px solid $halfWhite;
     }
 
     &__left {
         font-size: 24px;
         font-weight: bold; 
+    }
+
+    &__barMenu {
+        @include breakpoint(tablet) {
+            display: none;
+        }
     }
 }

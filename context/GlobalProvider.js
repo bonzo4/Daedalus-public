@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const { Provider, Consumer } = React.createContext();
 
 
@@ -10,8 +9,25 @@ class GlobalProvider extends React.Component {
 
         this.state = {
             portalRouteText: 'Dashboard',
-            walletInfo: ''
+            walletInfo: '',
+
+            //Navigation
+            subRoute: '',
+            currentRoute: '',
+            openDrawer: false,
         }
+    }
+
+    setCurrentSubRoute = (text) => {
+        this.setState(() => ({
+            subRoute: text
+        }));
+    }
+
+    setCurrentRoute = (text) => {
+        this.setState(() => ({
+            currentRoute: text
+        }))
     }
 
     setPortalTextRoute = (text) => {
@@ -20,12 +36,21 @@ class GlobalProvider extends React.Component {
         }))
     }
 
+    setDrawerActivity = () => {
+        this.setState(() => ({
+            openDrawer: !this.state.openDrawer
+        }))
+    }
+
     render() {
         return (
             <Provider 
                 value = {{ 
                 ...this.state,
-                setPortalTextRoute: this.setPortalTextRoute
+                setPortalTextRoute: this.setPortalTextRoute,
+                setDrawerActivity: this.setDrawerActivity,
+                setCurrentRoute: this.setCurrentRoute,
+                setCurrentSubRoute: this.setCurrentSubRoute
              }}>
                 { this.props.children }
             </Provider>  

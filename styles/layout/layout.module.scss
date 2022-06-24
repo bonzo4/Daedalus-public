@@ -6,6 +6,10 @@
     background-repeat: no-repeat;
     min-height: 100vh;
     animation: gradient 10s ease infinite;
+
+	&__main {
+		min-height: 70vh;
+	}
 }
 
 

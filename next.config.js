@@ -5,6 +5,7 @@ const nextConfig = {
   },
   compiler: {
     styledComponents: true,
+    removeConsole: true,
   },
   reactStrictMode: true,
 }

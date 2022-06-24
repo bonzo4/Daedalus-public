@@ -65,13 +65,13 @@ const Footer = () => {
                     { 
                         data.subFooter && data.subFooter.map((each, index) => (
                             <ul key={index} className={cx(styles.footer__subfooter_right_block)}>
-                                <li>
+                                <li className={cx('mb-2')}>
                                     {each.list_title}
                                 </li>
 
                                 { each.list &&  each.list.map((contentBlock, contentIndex) => {
                                     return (
-                                        <li key={contentIndex}>
+                                        <li className={cx('mb-2')} key={contentIndex}>
                                             <a href="" dangerouslySetInnerHTML={{ __html: contentBlock.title}}>
                                             </a>
                                         </li>  

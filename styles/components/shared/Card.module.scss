@@ -112,6 +112,10 @@
             object-fit: cover;
             object-position: center;
         }
+
+        &_link {
+            width: 100%;
+        }
     }
 
     &__subtitle {

@@ -1,6 +1,6 @@
 import type { AppProps } from 'next/app'
 import ErrorBoundary from '@/error/ErrorBoundary';
-import GlobalProvider from '@/context/GlobalProvider';
+import GlobalProvider from '@/context/GlobalProvider.js';
 import WindowSize from '@/context/WindowSize';
 import { NextUIProvider } from '@nextui-org/react'; 
 import '@/styles/globals.scss';

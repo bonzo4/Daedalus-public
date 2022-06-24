@@ -19,19 +19,18 @@ interface ICardRegular {
 
 const CardRegular:React.FC<ICardRegular> = ({list, cardBodyStyle}) => {
     return (
-        <Grid.Container gap={2}>
+        <Grid.Container gap={2} wrap="wrap" alignItems="stretch">
         {              
             list && list.map((each, index) => {
                 return (
-                    <Grid key={index} xs={6} sm={4} md={3} alignItems="stretch">
-                        <ButtonLink href={each.link}>
+                    <Grid key={index} xs={6} sm={4} md={3} >
+                        <ButtonLink href={each.link} className={cx(cardStyles.cardRegular__card_link)}>
                             <Card className={cx(cardStyles.cardRegular__card)}>
                                 <Card.Header css={{ p: 0, }}>
                                     <Image 
                                         src={each.image} 
                                         alt='Partner Image' 
                                         objectFit="cover"
-                                        width={280}
                                         className={cx(cardStyles.cardRegular__card_image)}
                                         />
                                 </Card.Header>

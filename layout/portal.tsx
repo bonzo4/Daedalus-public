@@ -3,11 +3,13 @@ import PortalBanner from '@/components/PortalBanner';
 import PaddingOffSet from '@/components/shared/PaddingOffSet';
 import styles from '@/styles/layout/portalLayout.module.scss';
 import { withGlobalProvider } from "@/context/GlobalProvider";
+import cx from 'classnames';
 interface ILayout {
     children: React.ReactNode,
+    openDrawer: Boolean
 }
 
-const PortalLayout:React.FC<ILayout> = ({children}) => (
+const PortalLayout:React.FC<ILayout> = ({children, openDrawer}) => (
     <div className={styles.container}>
         <PortalHeader />
         
@@ -17,6 +19,10 @@ const PortalLayout:React.FC<ILayout> = ({children}) => (
 
             {children}
         </main>
+
+        { openDrawer &&
+            <div className={cx(styles.portalLayout__layer)}></div>
+        }
     </div>
 )
 

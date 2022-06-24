@@ -6,16 +6,18 @@ import { withGlobalProvider } from "@/context/GlobalProvider";
 import CardRegular from '@/components/CardRegular';
 import CardAuthor from '@/components/CardAuthor';
 import CardPrice from '@/components/CardPrice';
+import Head from 'next/head';
 
 interface IDashboard{
-    setPortalTextRoute: Function
+    setPortalTextRoute: Function,
+    setCurrentRoute: Function,
+    subRoute: String
 }
  
-const Dashboard:React.FC<IDashboard> = ({setPortalTextRoute}) => {
-    const [currentRoute, setCurrentRoute] = useState('');
-
+const Dashboard:React.FC<IDashboard> = ({setPortalTextRoute, setCurrentRoute, subRoute}) => {
     useEffect(() => {
         setPortalTextRoute('DashBoard'); 
+        setCurrentRoute('dashboard');
     }, [])
 
     const pageData = {
@@ -243,30 +245,36 @@ const Dashboard:React.FC<IDashboard> = ({setPortalTextRoute}) => {
         ]
     }
     return (
-        <PortalLayout>
-            <section className={cx('wrapper', 'mb1')}>
-                <SubNavigation list={pageData.subNavigation} passRoute={setCurrentRoute}>
-                </SubNavigation>
-            </section>
-
-            {!currentRoute &&  
-            <section className={cx('wrapper')}>
-                <CardPrice list={pageData.cardPrice} buttonText="Partnership Request"/>
-            </section>
-            }
-
-            {currentRoute == 'active-projects' &&
-            <section className={cx('wrapper')}>
-                <CardAuthor list={pageData.cardCreator}/>
-            </section>
-            }   
-
-            {currentRoute == 'past-projects' &&
-                <section className={cx('wrapper')}>
-                    <CardRegular list={pageData.cardRegular}/>
+        <>
+            <Head>
+                <title>Dashboard | Daedalus Labs</title>
+            </Head>
+            
+            <PortalLayout>
+                <section className={cx('wrapper', 'mb1')}>
+                    <SubNavigation list={pageData.subNavigation}>
+                    </SubNavigation>
                 </section>
-            }
-        </PortalLayout>
+
+                {!subRoute &&  
+                    <section className={cx('wrapper')}>
+                        <CardPrice list={pageData.cardPrice} buttonText="Partnership Request"/>
+                    </section>
+                }
+
+                {subRoute == 'active-projects' &&
+                    <section className={cx('wrapper')}>
+                        <CardAuthor list={pageData.cardCreator}/>
+                    </section>
+                }   
+
+                {subRoute == 'past-projects' &&
+                    <section className={cx('wrapper')}>
+                        <CardRegular list={pageData.cardRegular}/>
+                    </section>
+                }
+            </PortalLayout>
+        </>
     )
 }
 

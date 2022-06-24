@@ -18,7 +18,7 @@ interface ICardPrice {
 
 const CardPrice:React.FC<ICardPrice> = ({list, buttonText}) => {
     return (
-        <Grid.Container gap={1}>
+        <Grid.Container gap={1} wrap="wrap">
         {list && list.map((each, index) => {
                 return (
                     <Grid key={index} xs={6} sm={4} md={3} >

@@ -29,7 +29,7 @@ const ImageBlock: React.FC<IImageBlock> = ({title, description, image, blockTitl
                 <Grid sm={8} xs={12} md={6} alignItems="center">
                     <div className={cx(styles.imageBlock__bottom_text)}>
                         <h3>{blockTitle}</h3>
-                        <p dangerouslySetInnerHTML={{ __html: blockDescription}}></p>
+                        <p className={cx('my-5')} dangerouslySetInnerHTML={{ __html: blockDescription}}></p>
 
                         <Button click={() =>{}}>
                             Buy on Magic Den

@@ -1,4 +1,6 @@
 $max-z-index: 2147483647;
+$index-priority-two: $max-z-index - 1;
+$index-priority-three: $max-z-index - 2;
 
 // Responsive breakpoint variables
 $breakpoint-mobile: 375px !default;

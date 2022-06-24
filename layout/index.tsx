@@ -10,7 +10,7 @@ interface ILayout {
 const Layout: React.FC<ILayout> = ({children}) => (
     <div className={styles.container}>
         <Header />
-        <main className={cx('min-h-screen')}>
+        <main className={cx('min-h-screen', styles.container__main)}>
             {children}
         </main>
         <Footer />

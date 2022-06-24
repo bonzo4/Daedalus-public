@@ -3,6 +3,8 @@ import ButtonLink from '@/components/shared/ButtonLink';
 import cx from 'classnames';
 import { getHashValue } from '@/utils/index';
 import styles from '@/styles/components/SubNavigation.module.scss';
+import { withGlobalProvider } from "@/context/GlobalProvider.js";
+
 
 interface ListItem {
     hashLink: string,
@@ -12,29 +14,31 @@ interface ListItem {
 interface IBreadcrumb {
     list: Array<ListItem>,
     children?: React.ReactNode,
-    passRoute?: Function
+    setCurrentSubRoute?: Function,
+    subRoute: String,
 }
 
-const SubNavigation:React.FC<IBreadcrumb> = ({list, children, passRoute}) => {
+const SubNavigation:React.FC<IBreadcrumb> = ({list, children, setCurrentSubRoute, subRoute}) => {
     const [listItem, handleUpdateListItem] = useState<ListItem[]>();
 
     useEffect(() => {
         handleUpdateListItem(list);
-
         return function cleanup() {
         }
     }, [])
 
-    const isActiveClass = (hashLink:string) => {
-        if (passRoute)
-        {
-            passRoute(getHashValue())
+
+    const handleChangeSubRoute = (hashLink:string) => {
+        if (setCurrentSubRoute) {
+            setCurrentSubRoute(hashLink)
         }
-        if(getHashValue() == hashLink) {
+    }
+
+    const isActiveClass = (hashLink:string) => {
+        if(subRoute == hashLink) {
             return styles.subNavigation__list_active;
         }
         
-
         return '';
     }  
     return (
@@ -43,7 +47,7 @@ const SubNavigation:React.FC<IBreadcrumb> = ({list, children, passRoute}) => {
                 <ul className={cx(styles.subNavigation__list_container)}>
                     {listItem && listItem.map((each, index) => (
                         <li key={index} className={cx(styles.subNavigation__list, isActiveClass(each.hashLink))}>
-                            <ButtonLink href={'#'+each.hashLink}>
+                            <ButtonLink href={'#'+each.hashLink} click={() => handleChangeSubRoute(each.hashLink)}>
                                 {each.title}
                             </ButtonLink>
                         </li>
@@ -59,4 +63,4 @@ const SubNavigation:React.FC<IBreadcrumb> = ({list, children, passRoute}) => {
     )
 }
 
-export default SubNavigation
+export default withGlobalProvider(SubNavigation);

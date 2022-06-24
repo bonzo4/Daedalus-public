@@ -4,13 +4,13 @@ import { withGlobalProvider } from "@/context/GlobalProvider";
 import CardRegular from '@/components/CardRegular';
 import cx from 'classnames';
 import cardStyles from '@/styles/components/shared/Card.module.scss';
-import { Input } from '@nextui-org/react';
-
+import Head from 'next/head';
 interface IAccount {
-    setPortalTextRoute: Function
+    setPortalTextRoute: Function,
+    setCurrentRoute: Function
 }
 
-const Admin:React.FC<IAccount> = ({setPortalTextRoute}) => {
+const Admin:React.FC<IAccount> = ({setPortalTextRoute, setCurrentRoute}) => {
     const pageData = {
         cardRegular: [
             {
@@ -75,6 +75,7 @@ const Admin:React.FC<IAccount> = ({setPortalTextRoute}) => {
     
     useEffect(() => {
         setPortalTextRoute('Admin');
+        setCurrentRoute('admin');
     }, [])
 
     const filterKeyword = (e:any) => {
@@ -85,18 +86,24 @@ const Admin:React.FC<IAccount> = ({setPortalTextRoute}) => {
     }
 
     return (
-        <PortalLayout>
-            <section className={cx('wrapper', 'mb-5')}>
-                <label className="block text-gray-700 text-sm font-bold mb-2 hidden" htmlFor="keyword_searching">
-                    Searching keyword
-                </label>
-                <input id="keyword_searching" className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" placeholder='Search Account Name' onChange={(e) => filterKeyword(e)}/>
-            </section>
+        <>
+            <Head>
+                <title>Dashboard | Daedalus Labs</title>
+            </Head>
+            
+            <PortalLayout>
+                <section className={cx('wrapper', 'mb-5')}>
+                    <label className="block text-gray-700 text-sm font-bold mb-2 hidden" htmlFor="keyword_searching">
+                        Searching keyword
+                    </label>
+                    <input id="keyword_searching" className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" placeholder='Search Account Name' onChange={(e) => filterKeyword(e)}/>
+                </section>
 
-            <section className={cx('wrapper')}>
-                <CardRegular list={sliceOfCardRegular} cardBodyStyle={cx(cardStyles.cardRegular__headline_left)}/>
-            </section>
-        </PortalLayout>
+                <section className={cx('wrapper')}>
+                    <CardRegular list={sliceOfCardRegular} cardBodyStyle={cx(cardStyles.cardRegular__headline_left)}/>
+                </section>
+            </PortalLayout>
+        </>
     )
 }
 

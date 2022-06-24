@@ -17,9 +17,9 @@ const HeroMain: React.FC<HeroMain> = ({title, description, imageBlock, waitlist}
                 justify="center" 
                 alignItems="center">
                 <Grid xs={12} md={5} justify="center">
-                    <div className={cx(styles.container__left, 'mb1')}>
+                    <div className={cx(styles.container__left, 'mb-5')}>
                         <h2>{ title }</h2>
-                        <p>{ description }</p>
+                        <p className={cx('m-3')}>{ description }</p>
 
                         <form>
                             <Input
@@ -28,7 +28,7 @@ const HeroMain: React.FC<HeroMain> = ({title, description, imageBlock, waitlist}
                                 labelPlaceholder="Your email"
                             />
 
-                            <Button className={cx(styles.container__left_button)}>
+                            <Button click={() =>{}} className={cx(styles.container__left_button)}>
                                 {"I'm interested!"}
                             </Button>
                         </form>
