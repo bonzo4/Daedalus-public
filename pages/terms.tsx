@@ -17,16 +17,16 @@ const Terms = () => {
                     Terms and Conditions
                 </header>
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
-                    High Voltage Worlds is a distributed application that runs on the Solana
+                    Daedalus is a distributed application that runs on the Solana
                     network, using uniquely coded smart contracts (each, a “Smart Contract”
                     or "NFT") that allow users to acquire, buy and sell, own and transfer,
-                    the unique digital assets located at highvoltageworlds.io (the “Site”).
-                    The visual asset(s) and artwork of each individual hvWorlds NFT is
-                    hereafter known as the "Art". High Voltage Worlds LLC (“hvWorlds”, “we”,
+                    the unique digital assets located at daedlaus.io (the “Site”).
+                    The visual asset(s) and artwork of each individual Daedalus NFT is
+                    hereafter known as the "Art". Daedalus LLC (“Daedalus”, “we”,
                     or “us”) is the party making the App available for you to use. The Smart
                     Contractunivs and the Site are collectively referred to in these T&C as
-                    the “App”. Using the App, users can view their hvWorlds NFT, and use the
-                    Smart Contracts to acquire hvWorlds NFT on the Solana network. The App,
+                    the “App”. Using the App, users can view their Daedalus NFT, and use the
+                    Smart Contracts to acquire Daedalus NFT on the Solana network. The App,
                     its connected services, and other options are provided “as is” and “as
                     available” without warranty of any kind. There is no ability to undo,
                     change, reverse, or restore any transactions on the Solana network.
@@ -34,15 +34,15 @@ const Terms = () => {
                     to these T&C and any other terms and conditions incorporated or
                     referenced herein (the T&C and any other terms and conditions
                     incorporated or referenced herein are collectively referred to as the
-                    “Terms”). The purchase of a hvWorlds NFT does NOT CONSTITUTE AN
+                    “Terms”). The purchase of a Daedalus NFT does NOT CONSTITUTE AN
                     INVESTMENT.
                 </article>
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
                     PLEASE READ THESE TERMS CAREFULLY BEFORE USING THE APP, THE SMART
                     CONTRACTS, OR THE SITE. THESE TERMS GOVERN YOUR USE OF THE APP, THE
-                    SMART CONTRACTS, AND THE SITE, UNLESS HIGH VOLTAGE WORLDS HAS AGREED TO
+                    SMART CONTRACTS, AND THE SITE, UNLESS Daedalus HAS AGREED TO
                     DIFFERENT WRITTEN AGREEMENT WITH YOU TO THE CONTRARY, SIGNED BY BOTH
-                    PARTIES. HIGH VOLTAGE WORLDS IS ONLY WILLING TO MAKE THE APP, THE SMART
+                    PARTIES. Daedalus IS ONLY WILLING TO MAKE THE APP, THE SMART
                     CONTRACTS, AND THE SITE AVAILABLE TO YOU IF YOU ACCEPT ALL OF THESE
                     TERMS. BY USING THE APP, THE SMART CONTRACTS, THE SITE, OR ANY PART
                     THEREOF, YOU ARE CONFIRMING THAT YOU UNDERSTAND AND AGREE TO BE BOUND BY

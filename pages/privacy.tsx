@@ -19,23 +19,23 @@ const Privacy = () => {
                 <article
                     className={cx('text-left', 'mx-10')}
                 >
-                    Thank you for choosing to be part of the High Voltage Worlds community.
+                    Thank you for choosing to be part of the Daedalus community.
                     We are committed to protecting your privacy and, for that reason, we
                     have adopted this Privacy Policy to explain our data collection, use,
-                    and disclosure practices for our websites, highvoltageworlds.io and all
+                    and disclosure practices for our websites, Daedalus.io and all
                     related sites, software, and services provided by us that link to or
-                    reference this Privacy Policy (collectively, the “High Voltage
-                    Platform”). The High Voltage Worlds Platform is owned and operated by
-                    High Voltage Worlds, LLC (“High Voltage Worlds”, “we”, “us” or “our”).
+                    reference this Privacy Policy (collectively, the “Daedalus
+                    Platform”). The Daedalus Platform is owned and operated by
+                    Daedalus, LLC (“Daedalus”, “we”, “us” or “our”).
                 </article>
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
-                    This Privacy Policy applies to information High Voltage Worlds collects
-                    through the High Voltage Worlds Platform, as well as other information
+                    This Privacy Policy applies to information Daedalus collects
+                    through the Daedalus Platform, as well as other information
                     provided to us online or offline by third parties when we associate that
-                    information with users of the High Voltage Worlds Platform (but not to
+                    information with users of the Daedalus Platform (but not to
                     information collected from our employees, contractors, or vendors).
                     Certain third parties may also be able to collect information via the
-                    High Voltage Worlds Platform. The data collection and use practices of
+                    Daedalus Platform. The data collection and use practices of
                     these third parties may be governed by those third parties’ own
                     policies, including their own privacy policies, as further described in
                     Sections 2(A), 4, and 5, below.
@@ -56,18 +56,18 @@ const Privacy = () => {
                     <header className={cx('text-center', 'm-3', 'text-xl',)}>1. CONSENT</header>
                 </article>
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
-                    By accessing or using the High Voltage Worlds Platform, you consent to
+                    By accessing or using the Daedalus Platform, you consent to
                     this Privacy Policy. If you do not agree with this Privacy Policy,
-                    please do not access or use the High Voltage Platform. Information
-                    gathered through the High Voltage Worlds Platform may be transferred,
+                    please do not access or use the Daedalus Platform. Information
+                    gathered through the Daedalus Platform may be transferred,
                     used, and stored in the United States or in other countries where our
-                    service providers, our affiliates or we are located. If you use the High
-                    Voltage Worlds Platform, you agree to the transfer, use, and storage of
+                    service providers, our affiliates or we are located. If you use the Daedalus
+                    Platform, you agree to the transfer, use, and storage of
                     your Personal Information (as defined below) in those countries. The
                     data protection and other laws of the United States and other countries
                     might not be as comprehensive as those in your country. You agree that
-                    all transactions relating to the High Voltage Worlds Platform or High
-                    Voltage Worlds are deemed to occur in the United States, where our
+                    all transactions relating to the Daedalus Platform or Daedalus are
+                    deemed to occur in the United States, where our
                     servers are located.
                 </article>
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
@@ -82,17 +82,17 @@ const Privacy = () => {
                     information is provided for your benefit.
                 </article>
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
-                    The controller of the personal data collected through the High Voltage
-                    Worlds Platform is:
+                    The controller of the personal data collected through the Daedalus
+                    Platform is:
                     <br></br>
-                    High Voltage Worlds, LLC
+                    Daedalus, LLC
                     <br></br>
-                    If you use the High Voltage Worlds Platform, you acknowledge that your
+                    If you use the Daedalus Platform, you acknowledge that your
                     personal data is being processed pursuant to the following lawful bases:
-                    your consent, High Voltage Worlds’s legitimate interests, to fulfill
+                    your consent, Daedalus’s legitimate interests, to fulfill
                     requests made by you, and compliance with applicable law. You further
                     acknowledge and consent to your information that is gathered through the
-                    High Voltage Worlds Platform being transferred to, used in, and stored
+                    Daedalus Platform being transferred to, used in, and stored
                     in the United States.
                 </article>
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
@@ -105,7 +105,7 @@ const Privacy = () => {
                     Personal Information section below, but this will not affect the
                     lawfulness of processing based on consent before its withdrawal.
                     However, if you withdraw your consent or decline to provide personal
-                    data to us, you may be unable to use the High Voltage Worlds Platform.
+                    data to us, you may be unable to use the Daedalus Platform.
                     You have the right to file a complaint relating to the processing of
                     personal data with a supervisory authority.
                 </article>
@@ -114,17 +114,17 @@ const Privacy = () => {
                     <br></br>
                     <br></br>
                     If you would like to delete, update, or access the Personal Information
-                    we have collected from you, and/or deactivate or delete your High
-                    Voltage Worlds account, you may do so by sending an email to
-                    admin@highvoltageworlds.technology. Additionally, if your Personal
+                    we have collected from you, and/or deactivate or delete your Daedalus
+                    account, you may do so by sending an email to
+                    admin@daedalus.labs. Additionally, if your Personal
                     Information is subject to the GDPR, you may have certain additional
                     rights, including the right of restriction of processing of personal
                     data, and the right to object to the processing of personal data. Please
-                    send e-mail to admin@highvoltageworlds.technology for more information.
+                    send e-mail to admin@daedalus.labs for more information.
                 </article>
                 <header className={cx('text-center', 'm-3', 'text-xl',)}>2. Collection of Your Personal and Other Information</header>
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
-                    When you register for, or use the High Voltage Worlds Platform, we
+                    When you register for, or use the Daedalus Platform, we
                     collect Personal Information. By “Personal Information” we mean
                     information that can identify an individual, such as:
                     <ul className={cx('text-white', 'list-disc', 'ml-10')}>
@@ -136,30 +136,30 @@ const Privacy = () => {
                     </ul>
                 </article>
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
-                    The High Voltage Worlds Platform may integrate with social media and
+                    The Daedalus Platform may integrate with social media and
                     other third-party platforms such as Discord. When you connect your
-                    account from a third-party platform to the High Voltage Worlds Platform,
+                    account from a third-party platform to the Daedalus Platform,
                     then we may collect information from that third-party platform and share
                     information with that third-party platform. This collected information
                     may include, but is not limited to, your name, email address,
                     demographic information from your profile, or other content. You
-                    acknowledge and agree that High Voltage Worlds is not responsible for
+                    acknowledge and agree that Daedalus is not responsible for
                     the data collection or use practices of any such connected third-party
                     platform. You should read each third-party platform’s privacy policy
                     before connecting that third-party account.
                 </article>
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
                     You may choose not to provide Personal Information, but this may prevent
-                    you from receiving certain features of the High Voltage Worlds Platform.
+                    you from receiving certain features of the Daedalus Platform.
                 </article>
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
-                    We may also collect non-Personal Information relating to the High
-                    Voltage Worlds Platform, that is, information that does not personally
+                    We may also collect non-Personal Information relating to the Daedalus
+                    Platform, that is, information that does not personally
                     identify an individual. The non-Personal Information we may collect
-                    includes how you interact with the High Voltage Worlds Platform,
+                    includes how you interact with the Daedalus Platform,
                     information generally collected or “logged” by Internet websites or
                     Internet services when accessed or used by users, and information about
-                    your web browser or device accessing or using the High Voltage Worlds
+                    your web browser or device accessing or using the Daedalus
                     Platform.
                 </article>
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
@@ -174,7 +174,7 @@ const Privacy = () => {
                         <li>The pages of our website that you viewed during a visit;</li>
                         <li>
                             What information, or content you view or interact with using the
-                            High Voltage Worlds Platform; and
+                            Daedalus Platform; and
                         </li>
                         <li>
                             The city, state, province and country in which you are located;
@@ -190,7 +190,7 @@ const Privacy = () => {
                     non-Personal Information.
                 </article>
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
-                    Information collected by the High Voltage Worlds Platform may be
+                    Information collected by the Daedalus Platform may be
                     collected by us or one of our service providers, but in either case,
                     this Privacy Policy will govern the collection, use, and sharing of the
                     information.
@@ -199,12 +199,12 @@ const Privacy = () => {
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
                     <ul className={cx('text-white', 'list-disc', 'ml-10')}>
                         <li>
-                            Assist us in providing, maintaining, and protecting the High Voltage
-                            Worlds Platform;{" "}
+                            Assist us in providing, maintaining, and protecting the Daedalus
+                            Platform;{" "}
                         </li>
                         <li>
-                            Set up, maintain, and protect accounts to use the High Voltage
-                            Worlds Platform;
+                            Set up, maintain, and protect accounts to use the Daedalus
+                            Platform;
                         </li>
                         <li>Improve our online operations;</li>
                         <li>Process transactions;</li>
@@ -212,7 +212,7 @@ const Privacy = () => {
                         <li>
                             Communicate with you, such as provide you with account or
                             transaction-related communications, or other newsletters, and/or
-                            other communications relating to the High Voltage Worlds Platform;
+                            other communications relating to the Daedalus Platform;
                         </li>
                         <li>
                             Send or display offers and other content that is customized to your
@@ -223,7 +223,7 @@ const Privacy = () => {
                             services and developing new products or services; and
                         </li>
                         <li>
-                            Manage and maintain the systems that provide the High Voltage Worlds
+                            Manage and maintain the systems that provide the Daedalus
                             Platform.
                         </li>
                     </ul>
@@ -245,8 +245,8 @@ const Privacy = () => {
                     analytics).
                 </article>
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
-                    We may license third party software to include in or use with the High
-                    Voltage Worlds Platform, in which case we may disclose Personal
+                    We may license third party software to include in or use with the Daedalus
+                    Platform, in which case we may disclose Personal
                     Information and/or Non-Personal Information to the licensor. These third
                     parties’ collection and use of Personal Information and non-Personal
                     Information are subject to their own privacy policies, which you can
@@ -265,10 +265,10 @@ const Privacy = () => {
                     In addition, we may disclose your Personal Information to third parties
                     when we believe, in good faith and in our sole discretion, that such
                     disclosure is reasonably necessary to (a) enforce or apply the terms and
-                    conditions of the High Voltage Worlds Platform, including investigation
+                    conditions of the Daedalus Platform, including investigation
                     of potential violations thereof, (b) comply with legal or regulatory
                     requirements or an enforceable governmental request, (c) protect the
-                    rights, property or safety of High Voltage Worlds, our users or other
+                    rights, property or safety of Daedalus, our users or other
                     third parties, (d) prevent a crime or protect national security, or (e)
                     detect, prevent or otherwise address fraud, security or technical
                     issues.
@@ -277,7 +277,7 @@ const Privacy = () => {
                     Finally, we reserve the right to transfer information (including your
                     Personal Information) to a third party in the event of a sale, merger,
                     or transfer of all or a portion of the assets of our company relating to
-                    the High Voltage Worlds Platform, or in the event of a bankruptcy,
+                    the Daedalus Platform, or in the event of a bankruptcy,
                     liquidation, or receivership of our business. We will use commercially
                     reasonable efforts to notify you of such transfer, for example via email
                     or by posting notice on our website.
@@ -298,12 +298,12 @@ const Privacy = () => {
                     justifications.
                 </article>
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
-                    Every time you use the High Voltage Worlds Platform we collect
+                    Every time you use the Daedalus Platform we collect
                     non-Personal Information (discussed above in Section 2) regarding that
-                    use. For example, to improve the High Voltage Worlds Platform, we
-                    collect how, when, and which parts of the High Voltage Worlds Platform
+                    use. For example, to improve the Daedalus Platform, we
+                    collect how, when, and which parts of the Daedalus Platform
                     or its features you use, which third-party platforms you connect to the
-                    High Voltage Worlds Platform. Also, we may use your device’s unique
+                    Daedalus Platform. Also, we may use your device’s unique
                     identifier (UDID), media access control address (MAC Address), or other
                     unique identifiers to assist us in collecting and analyzing this data.
                 </article>
@@ -315,7 +315,7 @@ const Privacy = () => {
                     website, may store in your web browser and that the website operator or,
                     as applicable, the third party, can access when you visit the website. A
                     Cookie may also refer to web-browser-based storage provided by Adobe’s
-                    Flash plugin (a “Flash Cookie”). High Voltage Worlds Platform Cookies
+                    Flash plugin (a “Flash Cookie”). Daedalus Platform Cookies
                     may contain user preferences, unique identifiers, and other non-Personal
                     Information. A “Web Beacon” is a small, usually transparent image placed
                     on a web page that allows the operator of that image, which may be the
@@ -324,29 +324,29 @@ const Privacy = () => {
                 </article>
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
                     We and/or vendors may use Cookies to track the movements of individual
-                    users through the High Voltage Worlds Platform and elsewhere on the web or
+                    users through the Daedalus Platform and elsewhere on the web or
                     across apps, devices, and geographic locations, to help diagnose
                     problems with servers, to gather broad demographic information, to
                     conduct research, to record registration and/or personalization
-                    information, and to otherwise administer the High Voltage Worlds
+                    information, and to otherwise administer the Daedalus
                     Platform.
                 </article>
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
-                    In addition, High Voltage Worlds may use Cookies in our communications
+                    In addition, Daedalus may use Cookies in our communications
                     with you, such as within email to determine which messages have been
                     opened by recipients.
                 </article>
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
                     Your operating system and web browser may allow you to erase information
                     stored in Cookies, Flash Cookies, and local browser storage. But if you
-                    do so, you may be forced to login to the High Voltage Worlds Platform
+                    do so, you may be forced to login to the Daedalus Platform
                     again (if applicable) and you may lose some preferences or settings. You
                     may also be able to set your browser to refuse all website storage or to
-                    indicate when it is permitted, but some features of the High Voltage
-                    Worlds Platform may not function properly without it. We may use Cookies
-                    to keep you logged in, save your preferences for the High Voltage Worlds
-                    Platform, and to collect information about how you use the High Voltage
-                    Worlds Platform.
+                    indicate when it is permitted, but some features of the Daedalus
+                    Platform may not function properly without it. We may use Cookies
+                    to keep you logged in, save your preferences for the Daedalus
+                    Platform, and to collect information about how you use the Daedalus
+                    Platform.
                 </article>
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
                     More information about managing Cookies is available here. Cookie
@@ -358,7 +358,7 @@ const Privacy = () => {
                 <header className={cx('text-center', 'm-3', 'text-xl',)}>6. Transparency and Choice</header>
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
                     You may request access to your Personal Information by sending an email
-                    to admin@highvoltageworlds.technology We will try to locate and provide
+                    to admin@daedalus.labs We will try to locate and provide
                     you with your Personal Information and give you the opportunity to
                     correct this data, if it is inaccurate, or to delete it, at your
                     request. But, in either case, we may need to retain it for legal reasons
@@ -378,8 +378,8 @@ const Privacy = () => {
                 </article>
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
                     Please be aware that if you request us to delete your Personal
-                    Information, you may not be able to continue to use the High Voltage
-                    Worlds Platform. Also, even if you request that we delete your Personal
+                    Information, you may not be able to continue to use the Daedalus
+                    Platform. Also, even if you request that we delete your Personal
                     Information, we may need to retain certain information for a limited
                     period of time to satisfy our legal, audit and/or dispute resolution
                     requirements.
@@ -394,10 +394,10 @@ const Privacy = () => {
                 </article>
                 <header className={cx('text-center', 'm-3', 'text-xl',)}>7. Children</header>
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
-                    The High Voltage Worlds Platform is not intended for users under 13
+                    The Daedalus Platform is not intended for users under 13
                     years of age. We do not knowingly collect Personal Information from
                     users under 13 years of age. We do not authorize users under 13 years of
-                    age to use the High Voltage Worlds Platform.
+                    age to use the Daedalus Platform.
                 </article>
                 <header className={cx('text-center', 'm-3', 'text-xl',)}>8. Information Security</header>
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
@@ -409,10 +409,10 @@ const Privacy = () => {
                     Personal Information, we cannot guarantee its security.
                 </article>
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
-                    Within High Voltage Worlds, we restrict access to Personal Information
+                    Within Daedalus, we restrict access to Personal Information
                     to our employees, contractors, and agents who need to know that
-                    information in order to operate, develop, improve or support the High
-                    Voltage Worlds Platform. If we share Personal Information with service
+                    information in order to operate, develop, improve or support the Daedalus
+                    Platform. If we share Personal Information with service
                     providers, we require that they also use reasonable information security
                     measures to safeguard your Personal Information and only use your
                     Personal Information for the purposes for which we share it with them.
@@ -431,19 +431,19 @@ const Privacy = () => {
                 </article>
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
                     If you are under 18 years of age, reside in California, and have a
-                    registered High Voltage Worlds Platform account, you have the right to
-                    request removal of unwanted data that you publicly post on the High
-                    Voltage Worlds Platform. To request removal of such data, please contact
+                    registered Daedalus Platform account, you have the right to
+                    request removal of unwanted data that you publicly post on the Daedalus
+                    Platform. To request removal of such data, please contact
                     us using the contact information provided below, and include the email
                     address associated with your account and a statement that you reside in
                     California. We will make sure the data is not publicly displayed on the
-                    High Voltage Worlds Platform, but please be aware that the data may not
+                    Daedalus Platform, but please be aware that the data may not
                     be completely or comprehensively removed from our systems.
                 </article>
                 <header className={cx('text-center', 'm-3', 'text-xl',)}>10. Additional Privacy Rights</header>
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
                     You may request, up to two (2) times per year: (1) the categories and
-                    specific pieces of data that High Voltage Worlds has collected from you;
+                    specific pieces of data that Daedalus has collected from you;
                     (2) the categories of sources from which your data was collected; (3)
                     the categories of third parties to which your data has been disclosed or
                     sold; and (4) the purposes for which the information was disclosed or
@@ -453,7 +453,7 @@ const Privacy = () => {
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
                     Subject to certain limitations, you have the right to (1) request to
                     know more about the categories and specific pieces of personal
-                    information High Voltage Worlds collects, uses, and discloses about you,
+                    information Daedalus collects, uses, and discloses about you,
                     (2) request deletion of your Personal Information, (3) opt out of any
                     sales of your Personal Information, and (4) not be discriminated against
                     for exercising these rights. If you would like to make such a request,
@@ -462,7 +462,7 @@ const Privacy = () => {
                 </article>
                 <header className={cx('text-center', 'm-3', 'text-xl',)}>11. Third Party Websites</header>
                 <article className={cx('text-left', 'mx-10', 'my-5')}>
-                    Please note that the High Voltage Worlds Platform may link or integrate
+                    Please note that the Daedalus Platform may link or integrate
                     with third-party sites, services or apps. We are not responsible for the
                     privacy or security policies or practices or the content of such third
                     parties. Accordingly, we encourage you to review the privacy and
