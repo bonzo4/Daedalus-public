@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-      "./pages/**/*.{js,ts,jsx,tsx}",
-      "./components/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     colors: {
@@ -19,7 +19,9 @@ module.exports = {
       'bermuda': '#78dcca',
       'gray-300': "rgba(38, 38, 38, 1)",
       'dark-blue': "rgba(17,24,39, 1)",
-      'black': 'black'
+      'black': 'black',
+      'secondary': 'rgba(17, 24, 39, 1)',
+      'red': '#ff0000'
     },
     extend: {},
   },

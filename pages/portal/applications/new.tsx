@@ -5,11 +5,6 @@ import cx from 'classnames';
 import { useForm } from 'react-hook-form';
 import { ErrorMessage } from '@hookform/error-message';
 import axios from 'axios';
-import {
-    Accordion,
-    AccordionHeader,
-    AccordionBody,
-} from "@material-tailwind/react";
 
 
 interface IApplications {
@@ -18,12 +13,6 @@ interface IApplications {
 
 const Applications: React.FC<IApplications> = ({ setPortalTextRoute }) => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
-
-    const [open, setOpen] = useState(0);
-
-    const handleOpen = (value: number) => {
-        setOpen(open === value ? 0 : value)
-    }
 
     const onSubmitForm = async (values: Object) => {
         let config = {
@@ -98,7 +87,7 @@ const Applications: React.FC<IApplications> = ({ setPortalTextRoute }) => {
                             Daedalus Whitelist Allocation (%)<span className={cx('text-red')}>*</span>
                             <input type="number"
                                 {...register("whitelist-percentage", {
-                                    required: "Daedalus Whitelist Allocation"
+                                    required: "Daedalus Whitelist Allocation Required"
                                 })}
                                 className={cx('block', 'w-full', 'shadow', 'py-1', 'px-1', 'rounded-md', 'text-black')} />
                             <ErrorMessage
