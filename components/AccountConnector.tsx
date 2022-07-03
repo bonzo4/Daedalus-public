@@ -1,5 +1,6 @@
 import cx from "classnames";
 import ButtonLink from "./shared/ButtonLink";
+import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
 
 enum TypeConnector {
     twiter = "twitter",
@@ -32,9 +33,7 @@ const AccountConnector:React.FC<IConnector> = ({type}) => {
                 }
 
                 {type == 'wallet' && 
-                <ButtonLink buttonClass={true} href="/account/wallet">
-                    Connect <span className={cx("capitalize")}>{type}</span>
-                </ButtonLink>
+                <WalletMultiButton className={cx('bg-purple')}/>
                 }
            </div>
         </div>

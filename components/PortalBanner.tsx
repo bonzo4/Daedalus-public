@@ -5,6 +5,7 @@ import { Grid } from '@nextui-org/react';
 import { withGlobalProvider } from "@/context/GlobalProvider.js";
 import { svgHtml } from '@/utils/index.js'; 
 import Html from '@/components/shared/Html';
+import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
 
 interface IPortBanner{
     portalRouteText: String,
@@ -36,9 +37,7 @@ const PortalBanner:React.FC<IPortBanner> = ({portalRouteText, walletInfo, setDra
                 </Grid>
 
                 <Grid xs={6} justify="flex-end" className={cx(styles.portalBanner__right)}>
-                    <Button click={handleRequestingWallet}>
-                        Select Wallet
-                    </Button>
+                    <WalletMultiButton className={cx('bg-purple')}/>
                 </Grid>
             </Grid.Container>
         </div>
