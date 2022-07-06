@@ -243,7 +243,7 @@ const Calendar = () => {
                 </div>
                 <div className="container mx-auto px-4 py-2">
                     {todaysEvents &&
-                        <div className="bg-dark-blue rounded-md divide-y divide-solid p-2">
+                        <div className="bg-dark-blue rounded-md divide-y divide-solid ">
                             {
                                 todaysEvents.map((each, index) => (
                                     <div key={index}
